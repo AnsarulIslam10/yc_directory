@@ -1,3 +1,5 @@
+import Navbar from "../components/Navbar";
+
 export default function Layout({
   children,
 }: Readonly<{
@@ -5,6 +7,7 @@ export default function Layout({
 }>) {
     return(
         <main className="font-work-sans">
+            <Navbar/>
            {children} 
         </main>
     )
